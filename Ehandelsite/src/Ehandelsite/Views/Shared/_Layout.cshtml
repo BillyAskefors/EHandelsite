@@ -4,10 +4,100 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
+    
 </head>
 <body>
+
+    <form id="form1">
+        <div>
+            <div id="header" class="header">
+                <img src="pictures/kontorsprylarABLogga.png" style="height: 100px" />
+                <div class="glyphiconCustom">
+                    <button type="button" class="btn-link btn-lg">
+                        <span class="glyphicon glyphicon-shopping-cart"></span>
+                        <br>
+                        Varukorgen
+                    </button>
+                </div>
+                <div class="glyphiconCustom">
+                    <button type="button" class="btn-link btn-lg">
+                        <span class="glyphicon glyphicon-user"></span>
+                        <br>
+                        Logga in
+                    </button>
+                </div>
+                <div class="glyphiconCustom">
+                    <button type="button" class="btn-link btn-lg">
+                        <span class="glyphicon glyphicon-map-marker"></span>
+                        <br>
+                        Om oss
+                    </button>
+                </div>
+            </div>
+            <div id="header_meny" class="header">
+                <nav class="navbar navbar-inverse navbar-custom">
+                    <div class="container-fluid">
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <div class="nav navbar-nav">
+                                <%--
+                                <div class="active"><a href="#">Home</a></div>--%>
+                                <div class="dropdown">
+                                    <button class="dropbtn">Pennor</button>
+                                    <div class="dropdown-content">
+                                        <p>Blyerts</p>
+                                        <p>Bläck</p>
+                                        <p>Reservoarpennor</p>
+                                        <p>Tuschpennor</p>
+                                        <p>Stiftpennor</p>
+                                        <p>Överstrykningspennor</p>
+                                    </div>
+                                </div>
+                                <div class="dropdown">
+                                    <button class="dropbtn">Papper</button>
+                                    <div class="dropdown-content">
+                                        <p>Kuvert</p>
+                                        <p>Baspapper</p>
+                                        <p>Skisspapper</p>
+                                        <p>Grafikpapper</p>
+                                        <p>Brevpapper</p>
+                                        <p>Transparenta</p>
+                                    </div>
+                                </div>
+                                <div class="dropdown">
+                                    <button class="dropbtn">Häftapparat</button>
+                                    <div class="dropdown-content">
+                                        <p>Automatiska</p>
+                                        <p>Analoga</p>
+                                        <p>Häftklammer</p>
+                                        <p>Häftpistol</p>
+                                    </div>
+                                </div>
+                                <div class="dropdown">
+                                    <button class="dropbtn">Skrivare</button>
+                                    <div class="dropdown-content">
+                                        <p>Laserskrivare</p>
+                                        <p>Bläckskrivare</p>
+                                        <p>Bläckfisk</p>
+                                        <p>Multiskrivare</p>
+                                    </div>
+                                </div>
+                                
+                                <div><a href="#">Papper</a></div>
+                                <div><a href="#">Pennor</a></div>
+                                <div><a href="#">Skrivare</a></div>
+                                <div><a href="#">Häftapparat</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </form>
+
     <div>
         @RenderBody()
     </div>
+
+
 </body>
 </html>
