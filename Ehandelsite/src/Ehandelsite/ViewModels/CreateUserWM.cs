@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace Ehandelsite.ViewModels
 {
-    public class User
+    public class CreateUserWM
     {
-        public User(string email, string pword, string ssn, int userType)
+        public CreateUserWM(string email, string pword, string ssn, int userType)
         {
             EMail = email;
             PWord = pword;

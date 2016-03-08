@@ -6,6 +6,7 @@ using Microsoft.AspNet.Builder;
 using Microsoft.AspNet.Hosting;
 using Microsoft.AspNet.Http;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Data.Entity;
 
 namespace Ehandelsite
 {
@@ -15,6 +16,11 @@ namespace Ehandelsite
         // For more information on how to configure your application, visit http://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            //var conString = @"Data Source=projekt2server.database.windows.net;Initial Catalog=Projekt 2 Databas;Persist Security Info=True";
+            //services.AddEntityFramework()
+            //    .AddSqlServer()
+            //    .AddDbContext<Projekt2DatabasContext>(o =>
+            //    o.UseSqlServer(conString));
             services.AddMvc();
         }
 
