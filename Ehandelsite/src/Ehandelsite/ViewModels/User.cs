@@ -20,6 +20,6 @@ namespace Ehandelsite.ViewModels
         public string PWord { get; set; }
         public string SSN { get; set; }
         public int UserType { get; set; }
-        public List<Address> AddressList { get; set; }
+        public List<Address> AddressList { get; set; } 
     }
 }
